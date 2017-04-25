@@ -8,7 +8,7 @@ A lightweight bash version of the "envconsul" utility.
 
 # Usage
 
-Imaging you have this kind of document in Consul KV storage:
+Imagine you have this kind of document in Consul KV storage:
 
 ```yaml
 # KV: /config/app
