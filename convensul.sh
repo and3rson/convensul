@@ -35,7 +35,7 @@ then
     fi
 fi
 
-DATA=`curl "http://${HOST}:${PORT}/v1/kv/${KV}?dc=dc1&token=${TOKEN}&raw"`
+DATA=`curl -sS "http://${HOST}:${PORT}/v1/kv/${KV}?dc=dc1&token=${TOKEN}&raw"`
 
 LINES=()
 
