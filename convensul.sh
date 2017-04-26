@@ -23,6 +23,7 @@ PORT=$(echo $1 | awk -F: '{print $2}')
 PORT=${PORT:-8500}
 TOKEN=$2
 KV=$3
+KV=`echo $KV | sed -re 's/^\/+|\/+$//g'`
 ARGS="${@:4}"
 
 if [[ "$TOKEN" == "-" ]]
